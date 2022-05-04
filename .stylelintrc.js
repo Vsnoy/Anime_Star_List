@@ -1,0 +1,15 @@
+module.exports = {
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": [
+    "stylelint-less"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "color-no-invalid-hex":true,
+    "less/color-no-invalid-hex":true,
+    "string-quotes": null
+  }
+}
