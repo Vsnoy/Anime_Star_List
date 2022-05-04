@@ -19,9 +19,9 @@
 <script lang="ts" setup>
 import { ref, reactive } from 'vue'
 
-/** 当前种类id */
+/** 当前番剧种类id */
 const current_catogary_id = ref<number>(0)
-/** 种类信息列表 */
+/** 番剧种类列表 */
 const anime_catogary_list = reactive([
   {
     id: 0,
