@@ -3,8 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import Home from './views/home.vue'
+import Home from './views/home/home.vue'
 </script>
 
-<style>
-</style>
+<style lang="less" scoped/>

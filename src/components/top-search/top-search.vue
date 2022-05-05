@@ -8,7 +8,14 @@
       <div class="search-drop" v-show="input_focus_flag">
         <span>大家都在搜这些影片</span>
         <div class="hot-search-list">
-          <a :key="item.id" :href="item.path" v-for="item in hot_search_list">{{ item.name }}</a>
+          <a
+            :key="item.id"
+            :href="item.path"
+            :class="item.id < 3 ? 'hot' : ''"
+            v-for="item in hot_search_list"
+          >
+            {{ item.name }}
+          </a>
         </div>
       </div>
     </div>
@@ -34,6 +41,18 @@ const hot_search_list = reactive([
     id: 2,
     path: '#',
     name: '夏日重现'
+  }, {
+    id: 3,
+    path: '#',
+    name: '进击的巨人'
+  }, {
+    id: 4,
+    path: '#',
+    name: '命运石之门'
+  }, {
+    id: 5,
+    path: '#',
+    name: '刀剑神域'
   }
 ])
 
